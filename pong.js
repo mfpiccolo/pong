@@ -10,7 +10,7 @@ Background.prototype.draw = function(context) {
 var canvas = $("canvas")[0],
     game = new Game(canvas)
 
-game.entitites = [
+game.entities = [
   new Background()
 ]
 

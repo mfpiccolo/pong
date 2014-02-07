@@ -42,7 +42,7 @@ Game.prototype.start = function() {
 
   setInterval(function() {
     self.update()
-    self.darw()
+    self.draw()
   }, interval)
 }
 
@@ -55,7 +55,7 @@ Game.prototype.update = function() {
 Game.prototype.draw = function() {
   var self = this
 
-  this.entities.forEach(function(function) {
+  this.entities.forEach(function(entity) {
     if (entity.draw) entity.draw(self.context)
   })
 };
