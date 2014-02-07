@@ -7,7 +7,7 @@ describe("Pong", function() {
     game = new Game(canvas)
   })
 
-  it("canvas should have a black background", function() {
+  it("canvas a set width and height", function() {
     expect(canvas.height).toEqual(150)
     expect(canvas.width).toEqual(300)
   })
